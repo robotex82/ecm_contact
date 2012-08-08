@@ -1,0 +1,13 @@
+<%= simple_form_for @contact_request, :html_class => 'well' do |f| %>
+  <%= f.input :name %>
+  <%= f.input :email %>
+  <%= f.input :message, :as => :text %>
+  <%= f.input :terms_of_service, :as => :boolean %>  
+
+  <div class="controls">
+    <%= button_tag(:type => 'submit', :class => 'input btn') do %>
+      <i class="icon-ok"></i>
+      <%= t('helpers.submit.create', :model => f.object.class.model_name.human) %>
+    <% end %>
+  </div>  
+<% end %>

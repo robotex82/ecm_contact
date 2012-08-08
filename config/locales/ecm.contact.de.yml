@@ -1,0 +1,8 @@
+de:
+  ecm:
+    contact:
+      request:
+        index:
+          title: Kotaktanfrage
+        recipients: robotex@robotex.de
+        subject: "[%{application_name}] Neue Kontaktanfrage"
