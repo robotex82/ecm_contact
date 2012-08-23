@@ -1,0 +1,8 @@
+en:
+  ecm:
+    contact:
+      request:
+        index:
+          title: Contact request
+        recipients: change-me@example.com
+        subject: "[%{application_name}] New contact request"

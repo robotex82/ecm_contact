@@ -4,5 +4,5 @@ de:
       request:
         index:
           title: Kotaktanfrage
-        recipients: robotex@robotex.de
+        recipients: change-me@example.com
         subject: "[%{application_name}] Neue Kontaktanfrage"

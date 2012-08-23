@@ -1,6 +1,7 @@
 <%= simple_form_for @contact_request, :html_class => 'well' do |f| %>
   <%= f.input :name %>
   <%= f.input :email %>
+  <%= f.input :phone %>
   <%= f.input :message, :as => :text %>
   <%= f.input :terms_of_service, :as => :boolean %>  
 

@@ -3,6 +3,7 @@ module Ecm
     class Request < MailForm::Base
       attribute :name 
       attribute :email
+      attribute :phone
       attribute :message 
       attribute :terms_of_service
       attribute :nickname,  :captcha  => true    
