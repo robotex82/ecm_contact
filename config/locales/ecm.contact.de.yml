@@ -1,6 +1,9 @@
 de:
   ecm:
     contact:
+      form:
+        messages:
+          delivered: "Ihre Kontaktanfrage wurde versandt."
       request:
         index:
           title: Kotaktanfrage

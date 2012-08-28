@@ -1,6 +1,9 @@
 en:
   ecm:
     contact:
+      form:
+        messages:
+          delivered: "Your contact request has been delivered."
       request:
         index:
           title: Contact request

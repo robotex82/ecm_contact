@@ -1,1 +1,25 @@
-= ECM::Contact
+= ECM Contact
+
+Easy contact form for rails.
+
+= Installation
+
+Add the gem to your bundle:
+
+  # Gemfile
+  gem 'ecm_contact'
+  
+Install your bundle:  
+  
+  > bundle install
+  
+Add the routes:
+
+  # config/routes.rb
+  Ecm::Contact::Routing.routes(self)
+  
+= Usage
+
+= License
+
+This project rocks and uses MIT-LICENSE.
