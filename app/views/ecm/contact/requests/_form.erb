@@ -6,7 +6,7 @@
   <%= f.input :terms_of_service, :as => :boolean %>  
 
   <div class="controls">
-    <%= button_tag(:type => 'submit', :class => 'input btn') do %>
+    <%= button_tag(:type => 'submit', :class => 'input btn', :id => 'ecm_contact_request_submit') do %>
       <i class="icon-ok"></i>
       <%= t('helpers.submit.create', :model => f.object.class.model_name.human) %>
     <% end %>

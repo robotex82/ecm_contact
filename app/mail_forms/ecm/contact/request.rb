@@ -18,7 +18,8 @@ module Ecm
       def headers
         {
           :subject => I18n.t('ecm.contact.request.subject', :application_name => Rails.application.class.to_s.split("::").first),
-          :to => I18n.t('ecm.contact.request.recipients'),
+          # :to => I18n.t('ecm.contact.request.recipients'),
+          :to => Ecm::Contact::Configuration.recipients[Rails.env],
           :from => %("#{name}" <#{email}>)
         }
       end   

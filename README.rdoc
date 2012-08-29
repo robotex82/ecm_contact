@@ -13,6 +13,13 @@ Install your bundle:
   
   > bundle install
   
+Run the generator:
+  
+  > ecm:contact:install
+  
+This will create an initializer file in config/initializers. You should configure
+your recipients there.
+  
 Add the routes:
 
   # config/routes.rb
