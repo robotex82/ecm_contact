@@ -1,12 +1,12 @@
 <%= simple_form_for @contact_request, :html_class => 'well' do |f| %>
-  <%= f.input :name %>
-  <%= f.input :email %>
-  <%= f.input :phone %>
-  <%= f.input :message, :as => :text %>
+  <%= f.input :name, :input_html => { :class => 'span6' } %>
+  <%= f.input :email, :input_html => { :class => 'span6' } %>
+  <%= f.input :phone, :input_html => { :class => 'span6' } %>
+  <%= f.input :message, :as => :text, :input_html => { :class => 'span12' } %>
   <%= f.input :terms_of_service, :as => :boolean %>  
 
   <div class="controls">
-    <%= button_tag(:type => 'submit', :class => 'input btn', :id => 'ecm_contact_request_submit') do %>
+    <%= button_tag(:type => 'submit', :class => 'input btn btn-primary', :id => 'ecm_contact_request_submit') do %>
       <i class="icon-ok"></i>
       <%= t('helpers.submit.create', :model => f.object.class.model_name.human) %>
     <% end %>
