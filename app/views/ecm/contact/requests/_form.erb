@@ -1,9 +1,9 @@
 <%= simple_form_for @contact_request, :html_class => 'well' do |f| %>
-  <%= f.input :name, :input_html => { :class => 'span6' } %>
-  <%= f.input :email, :input_html => { :class => 'span6' } %>
-  <%= f.input :phone, :input_html => { :class => 'span6' } %>
-  <%= f.input :message, :as => :text, :input_html => { :class => 'span12' } %>
-  <%= f.input :terms_of_service, :as => :boolean %>  
+  <%= f.input :name, :input_html => { :class => Ecm::Contact::Configuration.input_name_css_classes } %>
+  <%= f.input :email, :input_html => { :class => Ecm::Contact::Configuration.input_email_css_classes } %>
+  <%= f.input :phone, :input_html => { :class => Ecm::Contact::Configuration.input_phone_css_classes } %>
+  <%= f.input :message, :as => :text, :input_html => { :class => Ecm::Contact::Configuration.input_message_css_classes } %>
+  <%= f.input :terms_of_service, :as => :boolean, :input_html => { :class => Ecm::Contact::Configuration.input_terms_of_service_css_classes } %>  
 
   <div class="controls">
     <%= button_tag(:type => 'submit', :class => 'input btn btn-primary', :id => 'ecm_contact_request_submit') do %>
