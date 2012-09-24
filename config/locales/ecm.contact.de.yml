@@ -7,5 +7,11 @@ de:
       request:
         index:
           title: Kotaktanfrage
-        recipients: change-me@example.com
         subject: "[%{application_name}] Neue Kontaktanfrage"
+  simple_form:
+    "yes": 'Ja'
+    "no": 'Nein'
+    required:
+      text: 'Pflichtfeld'
+      mark: '*'
+
