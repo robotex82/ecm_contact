@@ -5,7 +5,7 @@
   <%= f.input :message, :as => :text, :input_html => { :class => Ecm::Contact::Configuration.input_message_css_classes } %>
   <%= f.input :terms_of_service, :as => :boolean, :input_html => { :class => Ecm::Contact::Configuration.input_terms_of_service_css_classes } %>  
 
-  <div class="controls">
+  <div class="controls form-actions">
     <%= button_tag(:type => 'submit', :class => 'input btn btn-primary', :id => 'ecm_contact_request_submit') do %>
       <i class="icon-ok"></i>
       <%= t('helpers.submit.create', :model => f.object.class.model_name.human) %>
