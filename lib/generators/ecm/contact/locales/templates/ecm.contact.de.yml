@@ -6,7 +6,9 @@ de:
           delivered: "Ihre Kontaktanfrage wurde versandt."
       request:
         index:
-          title: Kotaktanfrage
+          page_title: Kontaktanfrage
+          meta_description: Kontaktieren Sie uns über unser Kontaktformular
+          title: Kontaktanfrage
         subject: "[%{application_name}] Neue Kontaktanfrage"
   simple_form:
     "yes": 'Ja'
