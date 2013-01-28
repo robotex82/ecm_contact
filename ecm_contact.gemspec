@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
 
-  s.add_dependency "rails", "~> 3.2.7"
+  s.add_dependency "rails", "~> 3.2.11"
   
   # Module dependencies
   s.add_dependency 'mail_form'
@@ -33,12 +33,11 @@ Gem::Specification.new do |s|
   s.add_development_dependency "shoulda-matchers"
   
   # Test automation
+  s.add_development_dependency 'rb-inotify', '~> 0.8.8'
   s.add_development_dependency 'guard-rails'
   s.add_development_dependency 'guard-rspec'
   s.add_development_dependency 'guard-bundler' 
-  
-  # Data generation
-  s.add_development_dependency "factory_girl_rails", "~> 1.0" 
-  s.add_development_dependency 'ffaker' 
-  s.add_development_dependency 'forgery', '0.5.0'  
+
+  # Dummy app
+  s.add_development_dependency 'i18n_routing'
 end

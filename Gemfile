@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 
-# Declare your gem's dependencies in ecm_pictures.gemspec.
+# Declare your gem's dependencies in ecm_faq.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
 # development dependencies will be added by default to the :development group.
 gemspec
@@ -14,7 +14,12 @@ gem "jquery-rails"
 # your gem to rubygems.org.
 
 # To use debugger
-# gem 'debugger'
+# gem 'ruby-debug'
 
 # Patched guard rails
 gem 'guard-rails',  :git => 'git://github.com/robotex82/guard-rails.git', :branch => 'better-engine-support'
+
+unless ENV['TRAVIS_RUBY_VERSION'].nil?
+  gem 'pg'
+  gem 'mysql2'
+end
