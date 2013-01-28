@@ -1,6 +1,6 @@
 module Ecm
   module Contact
-    VERSION = '1.0.12.pre'
+    VERSION = '1.0.13.pre'
   end
 end
 
