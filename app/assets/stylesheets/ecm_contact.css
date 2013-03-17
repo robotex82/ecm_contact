@@ -1,0 +1,10 @@
+label[for=ecm_contact_request_terms_of_service] {
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: -17px;
+}
+
+#new_ecm_contact_request .boolean span.error {
+  margin-left: 20px;
+}
+
