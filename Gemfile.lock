@@ -9,7 +9,7 @@ GIT
 PATH
   remote: .
   specs:
-    ecm_contact (1.0.13.pre)
+    ecm_contact (1.0.14.pre)
       mail_form
       rails (~> 3.2.11)
       simple_form
