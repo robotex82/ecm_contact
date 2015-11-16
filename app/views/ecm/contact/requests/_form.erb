@@ -4,12 +4,12 @@
   <%= f.input :email, :input_html => { :class => Ecm::Contact::Configuration.input_email_css_classes } %>
   <%= f.input :phone, :input_html => { :class => Ecm::Contact::Configuration.input_phone_css_classes } %>
   <%= f.input :message, :as => :text, :input_html => { :class => Ecm::Contact::Configuration.input_message_css_classes } %>
-  <%= f.input :terms_of_service, :as => :boolean, :required => true, :input_html => { :class => Ecm::Contact::Configuration.input_terms_of_service_css_classes } %>  
-  
+  <%= f.input :terms_of_service, :as => :boolean, :required => true, :label => false, :inline_label => true, :input_html => { :class => Ecm::Contact::Configuration.input_terms_of_service_css_classes } %>
+
   <div class="controls form-actions">
     <%= button_tag(:type => 'submit', :class => 'input btn btn-primary', :id => 'ecm_contact_request_submit') do %>
       <i class="icon-ok"></i>
       <%= t('helpers.submit.create', :model => f.object.class.model_name.human) %>
     <% end %>
-  </div>  
+  </div>
 <% end %>
